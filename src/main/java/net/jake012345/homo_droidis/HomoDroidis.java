@@ -1,7 +1,11 @@
 package net.jake012345.homo_droidis;
 
 import com.mojang.logging.LogUtils;
+import net.jake012345.homo_droidis.item.ModCreativeModeTabs;
+import net.jake012345.homo_droidis.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.common.CreativeModeTabRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -22,6 +26,10 @@ public class HomoDroidis {
     public HomoDroidis() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -34,7 +42,10 @@ public class HomoDroidis {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            //event.accept(ModItems.EDIBLE_IRON);
+            //event.accept(ModItems.EDIBLE_IRON_PLATE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
