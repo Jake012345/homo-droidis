@@ -2,5 +2,9 @@
   "item.homo_droidis.edible_iron": "Edible Iron",
   "item.homo_droidis.edible_iron_plate": "Edible Iron Plate",
 
+  "block.homo_droidis.edible_iron_block": "Block of Edible Iron",
+
+  "item.homo_droidis.metal_detector_item":  "Metal Detector",
+
   "creativetab.droid_tab": "Droid"
 }

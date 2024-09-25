@@ -1,6 +1,7 @@
 package net.jake012345.homo_droidis;
 
 import com.mojang.logging.LogUtils;
+import net.jake012345.homo_droidis.block.ModBlocks;
 import net.jake012345.homo_droidis.item.ModCreativeModeTabs;
 import net.jake012345.homo_droidis.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -29,6 +30,7 @@ public class HomoDroidis {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

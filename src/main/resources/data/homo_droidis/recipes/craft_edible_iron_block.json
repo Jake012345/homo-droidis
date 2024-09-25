@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "homo_droidis:edible_iron"
+    }
+  },
+  "result":
+  {
+    "item": "homo_droidis:edible_iron_block"
+  }
+}

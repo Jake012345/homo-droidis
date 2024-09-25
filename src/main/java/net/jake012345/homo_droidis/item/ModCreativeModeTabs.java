@@ -1,6 +1,7 @@
 package net.jake012345.homo_droidis.item;
 
 import net.jake012345.homo_droidis.HomoDroidis;
+import net.jake012345.homo_droidis.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,6 +22,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.EDIBLE_IRON.get());
                         output.accept(ModItems.EDIBLE_IRON_PLATE.get());
+                        output.accept(ModBlocks.EDIBLE_IRON_BLOCK.get());
+                        output.accept(ModItems.METAL_DETECTOR_ITEM.get());
                     })
                     .build());
 
