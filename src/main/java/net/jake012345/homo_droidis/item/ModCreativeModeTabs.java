@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.EDIBLE_IRON_PLATE.get());
                         output.accept(ModBlocks.EDIBLE_IRON_BLOCK.get());
                         output.accept(ModItems.METAL_DETECTOR_ITEM.get());
+                        output.accept(ModItems.COPPER_WIRE.get());
                     })
                     .build());
 
